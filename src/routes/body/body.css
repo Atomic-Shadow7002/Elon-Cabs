@@ -1,0 +1,284 @@
+/* ========== ABOUT SECTION ========== */
+.about-section {
+  background-image: url('../../assets/images/background/mainAboutUs.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1a1a1a;
+}
+
+.about-content {
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.about-content h2 {
+  font-size: 42px;
+  margin-bottom: 24px;
+  color: #1b254b;
+}
+
+.about-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ========== FEATURES ICON SECTION ========== */
+.feature-section {
+  padding: 60px 20px;
+  background-color: #f8f9fb;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.feature-item {
+  text-align: center;
+  width: 180px;
+  padding: 20px 10px;
+  background-color: #f9faff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1b254b;
+  margin-top: 12px;
+  line-height: 1.4;
+}
+
+.icon-circle {
+  background-color: #324378;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #1b254b;
+}
+
+.icon-circle img {
+  width: 28px;
+  height: 28px;
+}
+
+
+/* ========== AIRPORT TAXI SECTION ========== */
+.airport-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.airport-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1b254b;
+  margin-bottom: 40px;
+}
+
+.airport-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.airport-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.airport-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.12);
+}
+
+.airport-card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
+
+.tag {
+  background-color: #2d3d75;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.airport-card p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #2e57d3;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1c3ea5;
+}
+
+.btn-secondary {
+  background-color: #f26552;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #d94630;
+}
+
+.more-cars-btn {
+  margin-top: 30px;
+}
+
+.btn-yellow {
+  background-color: #f8a820;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background-color: #e09300;
+}
+
+
+/* ========== TOUR PACKAGE SECTION ========== */
+.tour-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.tour-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1b254b;
+  margin-bottom: 40px;
+}
+
+.tour-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.tour-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  width: 250px;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.tour-badge {
+  background-color: #324378;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.tour-card p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 8px 0 12px;
+}
+
+.btn-blue {
+  background-color: #2e85ff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #216cd6;
+}

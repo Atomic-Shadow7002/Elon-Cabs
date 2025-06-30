@@ -1,0 +1,54 @@
+/* Ensure all elements respect the box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent horizontal overflow globally */
+body {
+  overflow-x: hidden;
+}
+
+/* Container for the entire hero section */
+.main-container {
+  display: flex;
+  justify-content: flex-start; /* align to left */
+  align-items: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  padding: 160px 40px 0 200px; /* top and horizontal padding */
+  text-align: left;
+  z-index: 2;
+  position: relative;
+}
+
+/* Hero content block */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* Subtitle (smaller top line) */
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(190, 188, 188, 0.822);
+}
+
+/* Main bold title */
+.hero-title {
+  width: 100%;
+  font-size: 6.1rem;
+  font-weight: 1000;
+  color: white;
+  line-height: 1.2;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+.button-book {
+  padding: 15px 40px;
+  margin-top: 20px;
+}

@@ -1,0 +1,59 @@
+.button-animate {
+  position: relative;
+  overflow: hidden;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 0;
+  transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+/* Top half background (slides right) */
+.button-animate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: orange;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Bottom half background (slides left) */
+.button-animate::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: orange;
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+  z-index: -1;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Hover animations */
+.button-animate:hover::before {
+  transform: translateX(100%);
+}
+
+.button-animate:hover::after {
+  transform: translateX(-100%);
+}
+
+.button-animate:hover span::after {
+  opacity: 1;
+  transform: scale(1);
+}
