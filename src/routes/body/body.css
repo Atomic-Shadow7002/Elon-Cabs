@@ -1,57 +1,66 @@
-/* ========== ABOUT SECTION ========== */
-.about-section {
+/* ========== ABOUT WRAPPER ========== */
+.about-wrapper {
   background-image: url('../../assets/images/background/mainAboutUs.png');
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #1a1a1a;
 }
 
-.about-content {
-  max-width: 900px;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 50px 40px;
-  border-radius: 20px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  backdrop-filter: blur(4px);
+/* ========== ABOUT SECTION ========== */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
 }
 
+.about-content {
+  max-width: 1000px;
+  width: 100%;
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* Headings & Text */
 .about-content h2 {
-  font-size: 42px;
+  font-size: 44px;
+  font-weight: 700;
   margin-bottom: 24px;
   color: #1b254b;
 }
 
 .about-content p {
   font-size: 17px;
+  font-weight: 500;
   line-height: 1.8;
-  color: #333;
+  color: #4f4e4ed7;
 }
 
-/* ========== FEATURES ICON SECTION ========== */
+/* ========== FEATURES SECTION ========== */
 .feature-section {
-  padding: 60px 20px;
-  background-color: #f8f9fb;
-  text-align: center;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .features {
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 20px;
+  padding: 0 23px;
 }
 
+/* Individual Feature Item */
 .feature-item {
   text-align: center;
   width: 180px;
   padding: 20px 10px;
-  background-color: #f9faff;
+  background-color: #dfe0e2bd;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -64,12 +73,13 @@
 
 .feature-item h4 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   color: #1b254b;
   margin-top: 12px;
   line-height: 1.4;
 }
 
+/* Icon Styling */
 .icon-circle {
   background-color: #324378;
   width: 60px;
@@ -92,16 +102,17 @@
 }
 
 
+
 /* ========== AIRPORT TAXI SECTION ========== */
 .airport-section {
   padding: 80px 20px;
   background-color: #ffffff;
-  text-align: center;
+  text-align: center;;
 }
 
 .airport-section h2 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 8  00;
   color: #1b254b;
   margin-bottom: 40px;
 }
@@ -117,10 +128,14 @@
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
-  width: 250px;
-  padding: 20px;
+  border: 1px solid #ccc;
+  min-width: auto;
+  padding: 20px 20px 30px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .airport-card:hover {
@@ -131,61 +146,100 @@
 .airport-card img {
   width: 100%;
   height: auto;
-  margin-bottom: 12px;
   border-radius: 12px;
+  transition: transform 0.4s ease;
 }
 
-.tag {
+.airport-card:hover img {
+  transform: scale(1.05);
+}
+
+.car-details,
+.car-pricing {
+  font-size: 17px;
+  color: #444;
+  white-space: nowrap;      /* Prevent wrapping */
+  overflow: hidden;         /* Hide overflow if needed */
+  text-overflow: ellipsis;  /* Optional: add "..." if content overflows */
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+
+
+.separator-line-wrapper {
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-top: 14px; /* ✅ New: push content down so the tag doesn't overlap */
+}
+
+.separator-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.separator-line-wrapper .tag {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #2d3d75;
+  padding: 6px 12px;
+  border-radius: 12px;
   color: white;
   font-size: 12px;
   font-weight: bold;
-  padding: 6px 12px;
-  border-radius: 12px;
-  display: inline-block;
-  margin-bottom: 10px;
+  z-index: 1;
+  white-space: nowrap; /* ensures the text stays on one line */
 }
+
 
 .airport-card p {
   margin: 6px 0;
-  color: #444;
-  font-size: 14px;
+  color: #858383;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .card-buttons {
   display: flex;
   justify-content: center;
-  gap: 8px;
+  gap: 12px;
   margin-top: 12px;
 }
 
 .btn-primary,
 .btn-secondary {
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 9px;
   border: none;
-  font-size: 13px;
+  font-size: 14px;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 500;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary {
-  background-color: #2e57d3;
+  background-color: #2e57d3; /* Its takes from inline through buttonAnimation.css */
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #1c3ea5;
+  background-color: #0c142e;
 }
 
 .btn-secondary {
-  background-color: #f26552;
+  background-color: #f26552; /* Its takes from inline through buttonAnimation.css */
   color: white;
 }
 
 .btn-secondary:hover {
-  background-color: #d94630;
+  background-color: #0c142e;
 }
 
 .more-cars-btn {
@@ -208,6 +262,7 @@
 }
 
 
+
 /* ========== TOUR PACKAGE SECTION ========== */
 .tour-section {
   padding: 80px 20px;
@@ -216,8 +271,8 @@
 }
 
 .tour-section h2 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 700;
   color: #1b254b;
   margin-bottom: 40px;
 }
@@ -230,41 +285,47 @@
 }
 
 .tour-card {
+  position: relative;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  width: 250px;
-  padding: 16px;
+  min-width: auto;
   text-align: center;
+  overflow: hidden; /* ensures image border-radius is clipped */
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
-.tour-card:hover {
-  transform: translateY(-5px);
-}
 
 .tour-card img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 10px;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
+.tour-card:hover img {
+  transform: scale(1.1);
+}
 .tour-badge {
   background-color: #324378;
   color: #fff;
-  font-size: 12px;
-  padding: 5px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 10px;
   border-radius: 12px;
-  display: inline-block;
-  margin-bottom: 10px;
+  display: block;
+  width: fit-content; /* ensures it hugs the text */
+  margin: 10px auto;
 }
-
 .tour-card p {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
   color: #1a1a1a;
   margin: 8px 0 12px;
+  padding: 0 20px;
 }
 
 .btn-blue {
@@ -280,5 +341,296 @@
 }
 
 .btn-blue:hover {
-  background-color: #216cd6;
+  background-color: #0c142e;
 }
+
+
+/* ========== SERVICES OVERVIEW SECTION ========== */
+.services-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1b254b;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 24px;
+  max-width: 1400px;
+  margin: 0 auto 40px;
+}
+
+.service-card {
+  display: flex;
+  background-color: #f8f9fb;
+  border-radius: 16px;
+  overflow: hidden; /* Clip blur and image to card bounds */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  height: 200px;
+  border: 1px solid rgb(219, 217, 217);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+.service-text {
+  width: 50%;
+  padding: 24px;
+  text-align: left;
+  position: relative;
+}
+
+.service-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to right, #f8f9fb 0%, transparent 100%);
+  z-index: 2;
+}
+
+.service-text h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1b254b;
+}
+
+.service-text p {
+  font-size: 14px;
+  color: #444;
+}
+
+.service-card img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 16px 16px 0;
+}
+
+/* Buttons under services */
+.services-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-yellow-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f8a820;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 2px;
+  gap: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.btn-yellow-wrapper span {
+  margin: 0 20px;
+}
+
+.btn-yellow-wrapper:hover {
+  background-color: #e89c0d;
+}
+
+.btn-outline.small {
+  border: 2px solid white;
+  background: transparent;
+  color: white; /* Make text white initially */
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-outline.small:hover {
+  background-color: white;
+  color: white; /* Change text color on hover */
+}
+
+
+/* Optional: Responsive stacking on smaller screens */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .service-text,
+  .service-card img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .service-text::after {
+    display: none;
+  }
+
+  .service-card img {
+    border-radius: 0 0 16px 16px;
+    height: 200px;
+  }
+}
+
+
+/* ========== WHY CHOOSE US ========== */
+.why-choose-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.why-choose-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #1b254b;
+  margin-bottom: 40px;
+}
+
+.why-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-card {
+  width: 250px;
+  height: 320px;
+  padding: 24px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../assets/images/cards/whychoose.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-card:hover {
+  background-color: white;
+  background-image: none;
+  color: #1b254b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  justify-content: flex-start;
+}
+
+.why-card .icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+  z-index: 2;
+}
+
+.why-card .icon img {
+  width: 100%;
+  transition: filter 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.why-card:hover .icon img {
+  filter: brightness(0) invert(0);
+}
+
+.why-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  z-index: 2;
+}
+
+.why-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.why-card:hover p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== ARROW CIRCLE ========== */
+.arrow-circle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 100%) scale(0.5);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: transparent; /* default transparent */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+.arrow-circle img {
+  width: 16px;
+  height: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1); /* white arrow initially */
+}
+
+/* Show circle and make arrow fully visible on card hover */
+.why-card:hover .arrow-circle {
+  opacity: 1;
+  background-color: #f8a820;
+  transform: translate(-50%, 0) scale(1);
+}
+
+.why-card:hover .arrow-circle img {
+  opacity: 1;
+  filter: brightness(0) invert(1); /* white arrow on orange */
+}
+
+/* Override only when the circle itself is hovered */
+.why-card:hover .arrow-circle:hover {
+  background-color: white;
+}
+
+.why-card:hover .arrow-circle:hover img {
+  filter: brightness(0); /* dark arrow */
+}
+

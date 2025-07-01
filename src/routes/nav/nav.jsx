@@ -17,13 +17,13 @@ function Nav() {
           <li>
             <a href="#">
               Services
-              <img src={svgs["down-arrow-black"]} alt="arrow" />
+              <img src={svgs["down-arrow-white"]} alt="arrow" />
             </a>
           </li>
           <li>
             <a href="#">
               Fleets
-              <img src={svgs["down-arrow-black"]} alt="arrow" />
+              <img src={svgs["down-arrow-white"]} alt="arrow" />
             </a>
           </li>
           <li>
@@ -37,7 +37,7 @@ function Nav() {
       <div className="nav-right">
         <div className="phone"><div className="phone-icon-box"><img className="phone-icon" src={images.icons.phone} alt="phone-icon" /></div>
         <div className="phone-box"><span>Office Number</span><span>9394959399</span></div></div>
-        <button className="button-animate">Log In</button>
+        <button className="button-animate" style={{ '--padding': "15px 28px" }}>Log In</button>
 
       </div>
     </nav>

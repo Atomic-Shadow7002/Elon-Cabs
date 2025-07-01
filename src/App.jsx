@@ -5,6 +5,7 @@ import "./App.css";
 import Nav from "./routes/nav/nav.jsx";
 import Main from "./routes/main/main.jsx";
 import Body from "./routes/body/body.jsx"
+import Footer from "./routes/footer/footer.jsx"
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <div className="body-section">
      <Body />
     </div>
+    <Footer />
     </>
   );
 }

@@ -45,11 +45,11 @@
 
 /* Animations same as before */
 @keyframes zoomFade1 {
-  0% { opacity: 0; transform: scale(1.1); }
+  0% { opacity: 0.3; transform: scale(1.1); }
   10% { opacity: 1; transform: scale(1); }
   40% { opacity: 1; transform: scale(1.05); }
-  50% { opacity: 0; transform: scale(1.1); }
-  100% { opacity: 0; transform: scale(1.1); }
+  50% { opacity: 0.7; transform: scale(1.1); }
+  100% { opacity: 0.3; transform: scale(1.1); }
 }
 
 @keyframes zoomFade2 {
@@ -57,5 +57,5 @@
   50% { opacity: 0; transform: scale(1.1); }
   60% { opacity: 1; transform: scale(1); }
   90% { opacity: 1; transform: scale(1.05); }
-  100% { opacity: 0; transform: scale(1.1); }
+  100% { opacity: 0.3; transform: scale(1.1); }
 }

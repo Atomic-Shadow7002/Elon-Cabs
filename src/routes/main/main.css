@@ -52,3 +52,46 @@ body {
   padding: 15px 40px;
   margin-top: 20px;
 }
+
+@keyframes fadeSlideSmooth {
+  0%, 4% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10%, 40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  45%, 54% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  60%, 90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  95%, 100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Apply to each text element inside hero-container */
+.hero-container > * {
+  animation: fadeSlideSmooth 16s ease-in-out infinite;
+  animation-fill-mode: both;
+  will-change: opacity, transform;
+}
+
+/* Optional stagger for subtitle, title, and button */
+.hero-subtitle {
+  animation-delay: 0s;
+}
+.hero-title {
+  animation-delay: 0.2s;
+}
+.button-book {
+  animation-delay: 0.4s;
+}
+
+
